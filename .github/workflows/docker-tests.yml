@@ -31,5 +31,8 @@ jobs:
           path: |
             cypress-videos
             cypress-screenshots
+       - name: Parar e remover containers
+        if: always()
+        run: docker compose down     
 
 
